@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Привет, я Влад Чувашов</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        section {
+            text-align:center;
+            font-family: 'Courier New', Courier, monospace;
+            color: skyblue;
+            background: black;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Привет!</h1>
+        <h2>Меня зовут Влад Чувашов</h2>
+        <h3>Я начинаю изучать программирование</h3>
+        <h4>19.11.2023 17:00</h4>
+        <p>
+            <button id="vladButton">
+                Узнать сколько я уже занимаюсь программированием
+            </button>
+        </p>
+    </section>
+    <script>
+        const startDate = new Date('2023-11-19 17:00:00');
+
+        vladButton.onclick = () => {
+            const разница = new Date().getTime() - startDate.getTime(); // Разница в милисекундах
+            const разницаВЧасах = разница / 1000 / 60 / 60;
+
+            alert('Уже ' + разницаВЧасах.toFixed(1) + ' часов')
+        }
+    </script>
+</body>
+</html>

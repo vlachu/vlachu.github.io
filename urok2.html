@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изучаю вставку картинок и видео</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .img {
+            width: 60px;
+            height: 60px;
+            border: 3px solid rgb(90, 25, 90);
+            border-radius: 50%;
+            transition: transform 2s;
+        }
+
+        .img:hover {
+            border-color: #220b74;
+            transform: scale(2) rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Изучаю вставку картинок и видео</h1>
+    <p>
+        <img src="./img/photo_2023-11-21_19-55-43.jpg" class="img">
+        <img src="https://sodedesign.com/cdn/shop/files/Reggie_256x256_crop_center.jpg?v=1635928209" class="img">
+        <img src="./img/photo_2023-11-21_19-55-43.jpg" class="img">
+        <br />
+        <video
+            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+            controls
+            width="300"
+        />
+
+        <hr />
+
+        <a href="./index.html">Вернуться на главную</a>
+    </p>
+</body>
+</html>

@@ -11,11 +11,20 @@
             height: 100%;
         }
 
+        body {
+            background-image: url(./img/pkoko.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
         section {
             text-align:center;
             font-family: 'Courier New', Courier, monospace;
-            color: skyblue;
-            background: black;
+            color: green;
+            color: rgb(0, 255, 0);
+            color: violet;
+            background: rgba(28, 1, 58, 0.5);
+            
 
             display: flex;
             flex-direction: column;
@@ -23,19 +32,38 @@
             justify-content: center;
             height: 100%;
         }
+
+        a {
+            color: aqua;
+        }
+
+        a:hover {
+            color: rgb(213, 224, 64)
+        }
+
+
     </style>
+
 </head>
 <body>
     <section>
         <h1>Привет!</h1>
-        <h2>Меня зовут Влад Чувашов</h2>
+        <h2>Меня зовут Влад </h2>
         <h3>Я начинаю изучать программирование</h3>
         <h4>19.11.2023 17:00</h4>
         <p>
             <button id="vladButton">
-                Узнать сколько я уже занимаюсь программированием
+              нажми чтобы  узнать 
+              сколько я уже занимаюсь программированием
             </button>
         </p>
+        <p>
+            Уроки
+            <ul>
+                <li><a href="./urok1.html">Урок 1. Изучаю картинки и видео</a></li>
+            </ul>
+        </p>
+
     </section>
     <script>
         const startDate = new Date('2023-11-19 17:00:00');
@@ -46,6 +74,8 @@
 
             alert('Уже ' + разницаВЧасах.toFixed(1) + ' часов')
         }
+    
     </script>
+
 </body>
 </html>

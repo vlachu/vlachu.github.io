@@ -1,18 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>урок 1</title>
-    <style>
-        body {
-            text-align: center;
-        }
-    </style>
-</head> 
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>урок 1</title>
+ <style>
+    p {
+      text-align: center;
+    }
+ </style>
+</head>
+
 <body>
- <h1>Меня зовут Влад Чувашов</h1>   
- <p>Мне <strong>14</strong> лет </p>
- 
+    <h1>Меня зовут Влад Чувашов</h1>   
+    <p>
+        Мне <strong>14</strong> лет
+        
+        <button id="vladHourButton">часов</button>
+        <button id="vladSecondsButtonDFSAJHFDUSTDAS">секунд </button>
+        <button id="vladDayBatton">дней </button>
+    </p>
+
+   
+    <script>
+        const startDate = new Date('2009-7-3 12:20:00');
+
+        const hourButtonElement = document.getElementById('vladHourButton')
+
+        hourButtonElement.onclick = () => {
+            const разница = new Date().getTime() - startDate.getTime(); // разница в миллисекундах 
+            const разницаВчасах = разница / 1000 / 60 / 60;
+
+            alert('уже ' + разницаВчасах.toFixed(1) + ' часов')   
+        }
+
+       const secondsButtonElementDSADFDGASDGAS = document.getElementById('vladSecondsButtonDFSAJHFDUSTDAS')
+
+
+       secondsButtonElementDSADFDGASDGAS.onclick = () => {
+         const разница = new Date().getTime() - startDate.getTime(); // разница в миллисекундах 
+         const разницаВминутах = разница / 1000 / 60;
+
+          alert('уже ' + разницаВминутах.toFixed(1) + ' минут')   
+        }
+
+        const btnId = 'vladDayBatton';
+        const vladDayBattonElement = document.getElementById(btnId)
+        
+        vladDayBattonElement.onclick = () => {
+          const разница = new Date().getTime() - startDate.getTime(); // разница в днях 
+          const разницаВднях = разница / 1000 / 60 / 60 / 24;
+            alert('уже ' + разницаВднях.toFixed(1) + ' дней')
+        }
+   </script>
 </body>
 </html>

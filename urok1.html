@@ -5,6 +5,13 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>урок 1</title>
  <style>
+
+
+body {
+            background-image: url(img/картинка2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     p {
       text-align: center;
     }
@@ -14,11 +21,12 @@
 <body>
     <h1>Меня зовут Влад Чувашов</h1>   
     <p>
-        Мне <strong>14</strong> лет
-        
-        <button id="vladHourButton">часов</button>
-        <button id="vladSecondsButtonDFSAJHFDUSTDAS">секунд </button>
-        <button id="vladDayBatton">дней </button>
+        <button id="vladDayBatton">дней </button>🍦
+        <button id="vladHourButton">часов</button>🍦
+        <button id="vladSecondsButtonDFSAJHFDUSTDAS">минут</button>
+		🍦
+        , а это целых <span id="vladSec">-</span>
+        , <strong>мне уже <span id="vladYears">-</span> </strong> 
     </p>
 
    
@@ -52,6 +60,37 @@
           const разницаВднях = разница / 1000 / 60 / 60 / 24;
             alert('уже ' + разницаВднях.toFixed(1) + ' дней')
         }
-   </script>
+		
+		// Новое
+		const vladSecElement = document.getElementById('vladSec');
+		
+		function периодическиBlaBla() {
+			const ms = new Date().getTime() - startDate.getTime(); // разница в миллисекундах 
+			const sec = ms / 1000;
+
+			vladSecElement.textContent = Math.round(sec) + ' секунд.';
+		}
+		
+		периодическиBlaBla();
+		
+		setInterval(периодическиBlaBla, 1000)
+
+   // я сам делал
+   
+   const vladYearsElement = document.getElementById("vladYears");
+
+   function периодически() {
+    const ms = new Date().getTime() - startDate.getTime(); // разница в миллисекундах 
+    const years = ms / 1000 / 60 / 60 / 24 / 365;
+
+    vladYearsElement.textContent = Math.round(years) + " лет.";
+   }
+    периодически();
+
+    setInterval(переодически, 1000/ 60 / 60 / 24 / 365 )
+  </script>
+   <p>
+     <a href="./index.html">Вернуться на главную</a>
+   </p>
 </body>
 </html>

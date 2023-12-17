@@ -1,0 +1,29 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 550;
+}
+
+
+h1 {
+    margin-bottom: 25px ;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: indigo
+}
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgba(132, 0, 255, 0.562);
+}
+
+img {
+    width: 450px;
+    height: 400px;
+    float: right;
+    margin-left: 60px;
+}
+
+.container {
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+}

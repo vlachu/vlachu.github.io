@@ -1,0 +1,163 @@
+.fon {
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(#f8f8f8, #adadad);
+    padding-top: 50px;;
+}
+
+.car {
+    width: 400px;
+    height: 300px;
+}
+
+.cabin {
+    border: 8px solid tomato;
+    height: 120px;
+    border-radius: 12px;
+    margin: 0 80px;
+    width: 340px;
+    box-sizing: border-box;
+    border-bottom: 0;
+    margin-bottom: -20px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.kuzov {
+    width: 400px;
+    height: 100px;
+    background: tomato;
+    border-radius: 30px;
+    margin: 50px;
+    margin-top: 0;
+    position: relative;
+}
+
+.car:hover .light {
+    animation: police infinite 0.5s
+}
+
+.light {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: yellow;
+
+    animation: blink infinite 0.5s;
+    border: 3px solid #000000;
+}
+
+.number {
+    background: #fff;
+    height: 20px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+  
+@keyframes blink {
+    from {
+        background-color: orange;
+    }
+
+    to {
+        background-color: white;
+    }
+}
+
+@keyframes police {
+    0% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+.bamper {
+    width: 380px;
+    height: 40px;
+    background:silver;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.well {
+    background: linear-gradient(#000000, #444444, #000000);
+    width: 100px;
+    height: 150px;
+    border-radius: 10px;
+ /*   border-left: 8px dashed #000000;
+    border-right: 8px dashed #000000;
+    border-top: 8px double #000000;
+    border-bottom: 8px double #000000;*/
+
+     overflow: hidden;
+}
+
+.protector {
+    background: repeating-linear-gradient(
+  black ,
+  #777777 30px,
+  #111111 30px
+);
+width: 100%;
+height: 100%;
+opacity: 0.2;
+    animation: rotateWheel infinite 0.5s linear
+}
+
+@keyframes rotateWheel {
+    0% {
+        background-position-y: 30px;
+    }
+
+    100% {
+        background-position-y: 0px;    }
+}
+
+.shassi {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px 0 50px;
+    width: 400px;
+    margin-top: 50px;
+}
+
+.shassi:hover .protector {
+    animation-duration: 0.01s;
+}
+
+.podveska {
+    border-left: 16px solid green;
+    border-right: 16px solid green;
+    flex-grow: 2;
+    margin-top: -75px;
+    margin-bottom: 75px;
+    border-bottom: 20px double black;
+}
+
+.man {
+    font-size: 5rem;
+}
+
+.glass {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    transition: all 1s linear;
+}
+
+.glass:hover {
+    background: rgba(0,0,0,0.9);
+}

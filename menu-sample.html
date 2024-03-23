@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            padding: 0;
+            margin: 0;
+        }
+        .menu-button {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            padding: 8px;
+            border: 1px solid #dadada;
+            border-radius: 4px;
+        }
+
+        .line {
+            display: block;
+            height: 4px;
+            background: #adadad;
+            margin-bottom: 6px;
+            border-radius: 2px;
+        }
+
+        input:checked+.menu-button {
+            background-color: cadetblue;
+        }
+
+        input:checked+.menu-button+.menu-wrapper {
+            display: block;
+        }
+
+        .menu-wrapper {
+            display: none;
+        }
+
+        #menu1 {
+            display: none;
+        }
+
+        .my-menu {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            border: #f8f8f8 1px solid;
+        }
+
+        .my-menu li {
+            display: block;
+            list-style: none;
+            padding: 8px 16px;
+            border-bottom: #f8f8f8 1px solid;
+        }
+
+        .my-menu li:hover {
+            background-color: #f8f8f8;
+            cursor: pointer;
+        }
+
+
+        section {
+            padding: 2rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+        <input type="checkbox" id="menu1">
+        <label for="menu1" class="menu-button">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </label>
+        <div class="menu-wrapper">
+            <ul class="my-menu">
+                <li>Привет-1</li>
+                <li>Привет-2</li>
+                <li>Привет-3</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

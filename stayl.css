@@ -8,8 +8,8 @@
     color: rgba(68, 22, 175, 0.397);
     font-size: 30px;
 }
-
-
-body {
-    background-color: rgba(18, 71, 163, 0.507);
+.video{
+    width: 300px;
 }
+ 
+

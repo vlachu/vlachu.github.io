@@ -5,8 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>урок 4</title>
   <h1> Работа с картинками 2 часть (навиди курсор )</h1>
-  
   <style>
+    body{
+        background-color: darkgrey;
+        text-align: center;
+    }
+    h1{
+        background-color: rgb(31, 29, 29);
+        color: rgb(220, 223, 243);
+        height: 45px;
+        text-align: center;
+    }
      .img{
          width: 350px;
          height: 400px;
@@ -15,36 +24,37 @@
      .img:hover{
          filter: blur(0px);
          filter: contrast(2);
+         border: 4px solid rgba(48, 43, 43, 0.56);
      }
      .img1{
          width: 350px;
          height: 400px;
          margin-left: 130px;
          filter: contrast(0);
+         border: 4px solid rgba(48, 43, 43, 0.56);
      }
     .img1:hover{
          filter: contrast(2);
     }
-    .фото{
+    .img2{
      width: 350px;
      height: 400px;
      margin-left: 130px;
      filter: opacity(0);
+     border: 3px solid rgba(48, 43, 43, 0.56);
     }
-    .фото:hover{
+    .img2:hover{
      filter: opacity(10);
-    }
-    .p{
-        text-align: center;
+     border: 4px solid rgba(48, 43, 43, 0.56);
     }
    </style>
    </head>
     <body>
         <img src="./img/Пензятена.jpg" class="img">
         <img src="./img/Пензятена.jpg" class="img1">
-        <img src="./img/Пензятена.jpg" class="фото">
+        <img src="./img/Пензятена.jpg" class="img2">
         
-        <p><a href="./urok3.html">«Вернуться к предыдущему уроку»</a></p>
+        <p><a href="./urok3.html">«Вернуться к предыдущему урок>></a></p>
         <p><a href="./index.html">«Вернуться на главную>></a></p>
  </body>
  

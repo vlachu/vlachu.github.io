@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             height: 100%;
+            text-align: center;
         }
 
         body {
@@ -17,64 +18,88 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-
+        input:checked+.menu-button{
+            background-color: cadetblue;
+        }
+        input:checked+.menu-button+.menu-wrapper{
+            display: block;
+        }
         section {
-            text-align:center;
-            font-family: 'Courier New', Courier, monospace;
-            color: green;
-            color: rgb(0, 255, 0);
-            color: violet;
-            background: rgba(28, 1, 58, 0.5);
-            
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
+            padding: 2rem;
         }
-
-        a {
-            color: aqua;
+        .menu-button{
+            display:inline-block;
+            width: 75px;
+            height: 50px;
+            padding: 8px;
+            border: 1px solid #dadada ;
+            border-radius:2px;
         }
-
-        a:hover {
-            color: rgb(213, 224, 64)
+        .line{
+            display: block;
+            height: 4px;
+            background-color: rgba(44, 38, 38, 0.269);
+            margin-bottom: 6px;
+            border-radius: 2px;
         }
-        ul{text-align: end;}
-
-        
-        
+        #menu1{
+            display:none;
+        }
+        .menu-wrapper{
+            display: none;
+        }
+        .my-menu{
+            display:inline-block;
+            padding: 0;
+            margin: 0;
+            border: #f8f8f8 1px solid;
+        }
+        .my-menu li{
+            display: block;
+            list-style: none;
+            padding: 8px 20px;
+            border-bottom: #f8f8f8 1px solid;
+        }
+        .my-menu li:hover{
+            background-color: #f8f8f8;
+            cursor: pointer;
+        }
+        .textt{
+            color: rgb(100, 53, 131);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
        
     </style>
-
 </head>
 <body>
     <section>
+        <div class="textt">
         <h1>Привет!</h1>
         <h2>Меня зовут Влад </h2>
         <h3>Я начинаю изучать программирование</h3>
         <h4>19.11.2023 17:00</h4>
+        </div>
         <p>
             <button id="vladButton">
               нажми чтобы  узнать 
               сколько я уже занимаюсь программированием
             </button>
         </p>
-
-        <div class="btn-group">
-            <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              Уроки
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./urok1.html"> 1. Знакомство </a></li>
-                <li><a class="dropdown-item" href="./urok2.html">Урок 2. Знакомство с картинками и видео</a></li>
-                <li><a class="dropdown-item" href="./urok3.html">Урок 3. Знакомство с городами</a></li>  
-                <li><a class="dropdown-item" href="./urok4.html">урок 4. Продолжение знакомств с картинками</a></li>   
-            </ul>
-          </div>
-
-        
+         <input type="checkbox" id="menu1">
+         <label for="menu1" class="menu-button">
+         <span class="line"></span>
+         <span class="line"></span>
+         <span class="line"></span>
+         <span class="line"></span>
+         </label>    
+         <div class="menu-wrapper">
+         <ul class="my-menu">
+            <li><a href="./urok1.html">Урок 1</a></li>
+            <li><a href="./urok2.html">Урок 2</a></li>
+            <li><a href="./urok3.html">Урок 3</a></li>
+            <li><a href="./urok4.html">Урок 4</a></li>
+         </ul>
+         </div>
 
     </section>
     <script>
@@ -86,8 +111,6 @@
 
             alert('Уже ' + разницаВЧасах.toFixed(1) + ' часов')
         }
-    
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

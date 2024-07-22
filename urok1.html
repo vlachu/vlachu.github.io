@@ -17,14 +17,64 @@
     h2{
       text-align: center;
     }
-    
+    .animete{
+      width: 50px;
+      height: 80px;
+      background-color: rgb(0, 0, 0);
+      animation-name: chengeAnimete;
+      animation-duration: 7s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      margin-top: 10px;
+      
+    }
+    @keyframes chengeAnimete{
+      0%{
+        background-color: rgb(0, 0, 0);
+      }
+      10%{height: 100px;}
+      20%{height: 125px;}
+      30%{background-color: rgb(48, 43, 43);}
+      50%{height: 140px;}
+      60%{height: 150px;}
+      70%{background-color: rgb(33, 32, 55);}
+      80%{height: 170px;}
+      90%{height:190px;}
+      100%{ background-color: rgb(17, 16, 48);}
+    }
+    .bloc{ 
+      width: 50px;
+      height: 80px;
+      background-color: rgba(35, 34, 36, 0.113);
+      animation-name: chengeAni;
+      animation-duration: 7s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      margin-top: -180px;
+      margin-left: 50px;
+    }
+    @keyframes chengeAni{
+      0%{
+        background-color: rgba(127, 106, 106, 0.296);
+      }
+      10%{height: 100px;}
+      20%{height: 125px;}
+      30%{background-color: rgb(1, 1, 1);}
+      50%{height: 140px;}
+      60%{height: 150px;}
+      70%{background-color: rgba(67, 88, 80, 0.714);}
+      80%{height: 160px;}
+      90%{height:180px;}
+      100%{ background-color: rgba(80, 154, 124, 0.714);}
+    }
+
  </style>
 </head>
 
 <body>
-    <h1><strong> Мне уже <span id="vladYears">-</span> </strong> </h1>   
+  <h1><strong> Мне уже <span id="vladYears">-</span> </strong> </h1>   
     <h2> А это <span id="vladSec">-</span></h2>
-
+      <p> или </p>
     <p>
         <button id="vladDayBatton">дней </button>
         <button id="vladHourButton">часов</button>
@@ -32,7 +82,7 @@
     </p>
    
     <script>
-        const startDate = new Date('2009-7-3 12:20:00');
+        const startDate = new Date('2009-07-03 12:20:00');
 
         const hourButtonElement = document.getElementById('vladHourButton')
 
@@ -91,11 +141,13 @@
     setInterval(переодически, 1000/ 60 / 60 / 24 / 365 )
   </script>
   <p>
-   <a href="./urok2.html"> Перейти к следущему уроку</a>
+   <a href="./urok2.html"> >>Перейти к следущему уроку>></a>
   </p>
    <p>
-    <a href="./index.html">Вернуться на главную</a>
+    <a href="./index.html"><<Вернуться на главную>></a>
    </p>
-  
+   <div class="animete"></div>
+   <div class="bloc"></div>
+   <div class="blocrk"></div>
 </body>
 </html>

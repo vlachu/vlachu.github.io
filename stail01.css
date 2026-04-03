@@ -1,0 +1,35 @@
+*{
+    background-color: #333333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hi{
+ text-align: center; /* выравнивание текста*/
+ color:#00B7B7;
+ font-size: 25px; /* размер текста*/
+ margin-bottom: 0px; /* отступ между текстом (н1+н2) и всем что находится ниже*/
+}
+.links {
+    font-size: 25px;
+    text-align: center;
+    color: #8f38bb; /* Цвет применится ко всему тексту и маркерам */
+}
+
+.links ol {
+    display: inline-block; /* возможность ставить в столбец всё что ноходится внутри div*/
+    text-align: left;
+    padding: 20px 40px; /* Отступы внутри рамки (сверху/снизу и сбоку) */
+    border: 2px solid #8f38bb; /* Толщина, стиль и цвет рамки */
+    border-radius: 15px; /* Скругление углов (по желанию) */
+}
+
+.links a {
+    display: inline-block; /* разрешает видоизменять ссылку*/
+    color: inherit; /* Ссылка "заберет" цвет у родителя (.links) */
+    text-decoration: none;
+    transition: transform 0.5s;
+}
+.links a:hover { /* при наведении курсора*/
+    transform: scale(1.2);        /* Увеличивает текст на 20% */
+    color: #b156e1;              
+}

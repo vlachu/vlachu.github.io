@@ -1,0 +1,30 @@
+*{
+    background-color: rgba(255, 227, 184, 0.863);
+}
+a{
+    display: inline-block;
+    color: #2d24da;
+    transition: 0.5s;
+}
+a:hover{
+    transform: scale(1.5);
+    color: #2a2591;
+}
+h1{
+    text-align: center;
+    font-size: 65px;
+    color: rgb(111, 41, 110);
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(111, 41, 110);
+}
+#vladYears{
+    color: rgb(193, 58, 191);
+    text-decoration: underline;
+}
+#vladSec{
+    color: rgb(193, 58, 191);
+    text-decoration: underline;
+}

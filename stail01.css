@@ -26,7 +26,7 @@
 .links a {
     display: inline-block; /* разрешает видоизменять ссылку*/
     color: inherit; /* Ссылка "заберет" цвет у родителя (.links) */
-    text-decoration: none;
+    text-decoration: none; /* убирает подчёркивание ссылок */
     transition: transform 0.5s; /*время изменения*/
 }
 .links a:hover { /* при наведении курсора*/

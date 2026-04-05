@@ -5,6 +5,7 @@ a{
     display: inline-block;
     color: #2d24da;
     transition: 0.5s;
+    text-decoration: none;
 }
 a:hover{
     transform: scale(1.5);
@@ -19,6 +20,9 @@ h2{
     text-align: center;
     font-size: 30px;
     color: rgb(111, 41, 110);
+}
+p{
+    text-align: center;
 }
 #vladYears{
     color: rgb(193, 58, 191);

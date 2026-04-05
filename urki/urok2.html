@@ -3,44 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stail03.css">
     <title>Картинка и видео</title>
-    <style>
-        body {
-            text-align: center;
-            background-color: darkgray;
-        }
-
-        .img {
-            width: 60px;
-            height: 60px;
-            border: 3px solid rgb(90, 25, 90);
-            border-radius: 50%;
-            transition: transform 2s;
-        }
-
-        .img:hover {
-            border-color: #220b74;
-            transform: scale(2) rotate(360deg);
-        }
-    </style>
+   
 </head>
 <body>
     <h1>Картинка и видео</h1>
-    <p>
-        <img src="./img/photo_2023-11-21_19-55-43.jpg" class="img">
-        <br>
-        <div class="video">
-        <video
-            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-            controls
-            width="300px"
-        />
-        </div>
-
-        <hr>
-    </p>
-    <p> <a href="./urok1.html"> <<Вернуться к предыдущему уроку<< </a></p>
+    <img src="../img/photo_2023-11-21_19-55-43.jpg" class="img">  <!-- фотография + класс ( не знаю почему, но другой комментарий он не видит ) --> 
+    <p></p> <!-- Этот отступ/абзац нужен для того чтобы картинка не залезала под видео во время трансформации-->
+    <div class="video">
+    <video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" controls > /* img больше для фотографий, а video для видео */
+    </div>
+    <hr> <!--линия на весь дисплей -->
+    <p> <a href="./urok1.html"> <<Вернуться к предыдущему уроку<< </a></p> <!-- "p"- необходим для отступа между ссылок (так легче и удобние)-->
     <a href="./urok2.html">>>Перейти к следущему уроку>></a>
-    <p><a href="./index.html"><<Вернуться на главную>></a></p>
+    <p><a href="../website.html"><<Вернуться на главную>></a></p>
 </body>
 </html>

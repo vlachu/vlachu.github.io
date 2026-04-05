@@ -28,3 +28,44 @@ h2{
     color: rgb(193, 58, 191);
     text-decoration: underline;
 }
+.bloc{ 
+    margin-right: 0px;
+    width: 70px; 
+    height: 10px;
+    animation-name: chengeAnimete; 
+    animation-duration: 7s; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+.animette{
+    display: flex; /* разрешает выравнивать и изменять местоположение блоков */
+    align-items: flex-end;/* осуществляет вертикальное выравнивание */
+    height: 337px; /* в даном случае: чем выше показатеь, тем ниже блок*/
+    justify-content: space-between; /* это необходимо для того, чтобы блоки были противоположны дру другу*/
+}
+.animete{
+    margin-left: 0px; /* отступ слева */
+    height: 10px; /* высота блока */
+    width: 70px; /* ширина блока */
+    animation-name: chengeAnimete; /* куда прописана анимация */
+    animation-duration: 7s; /* время полной анимации */
+    animation-iteration-count: infinite;/* бесконечный повтор анимации*/
+    animation-direction: alternate; /* плавная анимация + когда достигает 100% идёт по убыванию до 0%*/
+}
+@keyframes chengeAnimete{
+    0%{
+     margin-bottom: 0px;
+     background-color: rgb(0, 0, 0);
+    }
+    10%{height: 400px;}
+    15%{background-color: rgb(111, 41, 110);}
+    20%{height: 350px;}
+    30%{background-color: rgb(48, 43, 43);}
+    50%{height: 285px;}
+    55%{background-color: rgb(193, 58, 191);}
+    60%{height: 230px;}
+    70%{background-color: rgb(33, 32, 55);}
+    80%{height: 190px;}
+    90%{height:150px;}
+    100%{background-color: rgb(17, 16, 48);}
+}

@@ -1,0 +1,89 @@
+
+body{
+    background-image: url(./cities/img/Пензятена.jpg); /* изображение превращается в фон */
+    background-size: cover; /* растягивает картинку на весь экран*/
+    background-repeat: no-repeat; /* если картинка маленькая, то она может повторяться,а эта команда предотвращает это*/
+    background-attachment: fixed; /* для того чтобы это всё работало */
+    background-position: center; /* картинка растягивается с центра*/
+}
+.Block{
+    position: fixed; /* необходимо для z-index*/
+    width: 320px;
+    height: 100%;
+    background-color: rgba(129, 127, 127, 0.8);
+    z-index: -1; /* делает элемент фоном*/
+    margin-left: -7px;
+    margin-top: -20px;
+}
+.links{
+    display: block;
+    font-size: 15px;
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 25px;
+}
+.links a{
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.links a:hover{
+    transform: scale(1.3); 
+    color: #161414;
+}
+h1{
+    background-color: rgba(61, 60, 60, 0.8); /* rgba добавляет чутвёртый показатель цвета (прозрачность) чем выше показатель, тем ниже прозрачность*/
+    color: rgb(168, 177, 185,);
+    width: 300px;
+    border-radius: 7px;
+}
+a{
+    color: #473838;
+    text-decoration: none;
+}
+
+input:checked+.menu-button{ /* когда кнопка активирована */
+    background-color: rgb(51, 56, 56);
+}
+input:checked+.menu-button+.menu-wrapper{ /* позволяет раскрыть/закрыть список по нажатию*/
+    display: block;
+}
+.menu-button{ /* в данном случае рамка */
+    display:inline-block; /* для взаимодействия ссылок */
+    width: 75px;
+    height: 40px;
+    background-color: rgba(100, 100, 100, 0.641);
+    padding: 15px; /* отступ со всех сторон*/
+    border: 3px solid  #252424 ; /* цвет боковых лининий + толщина*/
+    border-radius:2px;/* закругление края*/
+}
+.line{ /* линии внутри рамки */
+    display: block;
+    height: 6px;
+    background-color: rgba(18, 17, 17, 0.7);
+    margin-bottom: 6px;
+    border-radius: 2px;
+}
+#menu1{
+    display:none;/* скрывает элемент и не сдвигает остальные блоки */
+}
+.menu-wrapper{
+    display: none;
+}
+.my-menu{
+    background-color: rgba(77, 76, 76, 0.8);
+    text-align: center;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+    border:  #323232 1px solid; /* границы внутри */
+}
+.my-menu li{
+    display: block;
+    list-style: none; /* для того чтобы ссылки были в столбец использовалась ul+li эта комбинация создает точки возле ссылок, а list-style none убирает эти точки*/
+    padding: 10px 20px; /* отступы внутри каждого блока, первое значение высота, второе ширина*/
+    border-bottom: #323232 1px solid; /* граници между ссылок*/
+}
+.my-menu li:hover{
+    background-color: #252323;
+    cursor: pointer; /* курсор превращается в руку*/
+}

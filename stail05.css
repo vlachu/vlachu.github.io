@@ -14,6 +14,9 @@ h3{
     margin-left: 15%;
     font-size: 35px;
 }
+a{
+    text-decoration: none;
+}
 .h23{
    display: flex;
 }
@@ -30,7 +33,19 @@ h3{
     position: absolute;
     left: 20%;
     top: 40%;
+    width: 320px;
+}
+.pcss{
+    position: absolute;
+    right: 15%;
+    top: 40%;
+    width: 420px;
 }
 summary{
     font-size: 25px;
+}
+.lincks{
+    position: absolute;
+    top: 3%;
+    left: 3%;
 }

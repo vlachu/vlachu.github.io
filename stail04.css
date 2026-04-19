@@ -68,6 +68,8 @@ input:checked+.menu-button+.menu-wrapper{ /* позволяет раскрыть
 }
 .menu-wrapper{
     display: none;
+    position: absolute; /* меню не здвигает то что ниже */
+    z-index: 100%; /* необходима для position */
 }
 .my-menu{
     background-color: rgba(77, 76, 76, 0.8);
@@ -86,4 +88,7 @@ input:checked+.menu-button+.menu-wrapper{ /* позволяет раскрыть
 .my-menu li:hover{
     background-color: #252323;
     cursor: pointer; /* курсор превращается в руку*/
+}
+.links{
+    margin-top: 22%; /* чем выше показатель, тем ниже расположение блока*/  
 }

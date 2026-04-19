@@ -1,61 +1,96 @@
 <!DOCTYPE html>
-<html lang="ru">
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>урок 4</title>
-  <h1> Работа с картинками 2 часть (навиди курсор )</h1>
-  <style>
-    body{
-        background-color: darkgrey;
-        text-align: center;
-    }
-    h1{
-        background-color: rgb(31, 29, 29);
-        color: rgb(220, 223, 243);
-        height: 45px;
-        text-align: center;
-    }
-     .img{
-         width: 350px;
-         height: 400px;
-         filter: blur(9px);
-     }
-     .img:hover{
-         filter: blur(0px);
-         filter: contrast(2);
-         border: 4px solid rgba(48, 43, 43, 0.56);
-     }
-     .img1{
-         width: 350px;
-         height: 400px;
-         margin-left: 130px;
-         filter: contrast(0);
-         border: 4px solid rgba(48, 43, 43, 0.56);
-     }
-    .img1:hover{
-         filter: contrast(2);
-    }
-    .img2{
-     width: 350px;
-     height: 400px;
-     margin-left: 130px;
-     filter: opacity(0);
-     border: 3px solid rgba(48, 43, 43, 0.56);
-    }
-    .img2:hover{
-     filter: opacity(10);
-     border: 4px solid rgba(48, 43, 43, 0.56);
-    }
-   </style>
-   </head>
-    <body>
-        <img src="./img/Пензятена.jpg" class="img">
-        <img src="./img/Пензятена.jpg" class="img1">
-        <img src="./img/Пензятена.jpg" class="img2">
-        
-        <p><a href="./urok3.html">«Вернуться к предыдущему урок>></a></p>
-        <p><a href="./index.html">«Вернуться на главную>></a></p>
- </body>
- 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stail05.css">
+    <title> Библиотека команд </title>
+</head>
+<body>
+  <h1> Библотека использованных команд </h1>
+ <div class="h23">
+    <h2> Html </h2>
+    <h3> Css </h3>
+ </div>
+ <div class="phtml">
+   <details>
+     <summary> (h1-h6) </summary>
+     <p>Этот тег разрешает ввести увеличенный текст  <p></p> с дополнительным отступом</p>
+   </details>
+   <details>
+    <summary> (p) </summary>
+    <p> В отличие от "h" этот тег не изменяет размер <p></p> текста, а просто добавляет отступ </p>
+   </details>
+   <details>
+     <summary> (title) </summary>
+     <p> Изменяет название вкладки браузера </p>
+   </details>
+   <details>
+     <summary> (head) </summary>
+     <p> Внутри него "title" и  ссылка на CSS </p>
+   </details>
+   <details>
+     <summary> (body) </summary>
+     <p> В нутри этого тега пишеться всё, что не <p></p> входит в "head"</p>
+   </details>
+   <details>
+     <summary> (details)</summary>
+     <p> Создаёт меню по типу третьего урока, но намного проще</p>
+   </details>
+   <details>
+     <summary> (summary)</summary>
+     <p> Употребляется внутри "details" и  отображает <p></p>  первоначальный текст до нажатия</p>
+   </details>
+   <details>
+     <summary> (div)</summary>
+     <p> Позволяет обьединить всё что внутри, и черрез "class" <p></p> видоизменять в "css" </p>
+   </details>
+   <details>
+     <summary> (script)</summary>
+     <p> Сложно обьяснить что это, но как я понял "script" <p></p> даёт разрешения вписывать команды из "js" не подключая <p></p> через "link"</p>
+   </details>
+   <details>
+     <summary> (img)</summary>
+     <p> позволяет вставлять картинку через "src" </p>
+   </details>
+   <details>
+     <summary> (video)</summary>
+     <p> Работает как "img" но позволяет вставлять видео </p>
+   </details>
+   <details>
+     <summary> (hr)</summary>
+     <p> Тонкая горизонтальная линия, которую можно <p></p> видоизменять</p>
+   </details>
+   <details>
+     <summary> (a)</summary>
+     <p> Ссылка направление которой прописывается в "href"</p>
+   </details>
+   <details>
+     <summary> (input)</summary>
+     <p> Определяет вкл/выкл</p>
+   </details>
+   <details>
+     <summary> (label)</summary>
+     <p> получает сигнал от "input" и взаимодействует с меткой <p></p> внутри "for" </p>
+   </details>
+   <details>
+     <summary> (span)</summary>
+     <p> Это "div" только внутри блока "label"</p>
+   </details>
+   <details>
+     <summary> (li)</summary>
+     <p> Создание списка</p>
+   </details>
+   <details>
+     <summary> (ol)</summary>
+     <p> Показывает начало и конец для "li" и отображает цифры </p>
+   </details>
+   <details>
+     <summary> (ul)</summary>
+     <p> Показывает начало и конец для "li" и отображает точки </p>
+   </details>
+ </div>
+
+  <div class="lini"></div> 
+</body>
 </html>

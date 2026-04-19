@@ -1,0 +1,36 @@
+*{
+    background-color: #164E63;
+    color: #fde68a; 
+}
+h1{
+    text-align: center;
+    margin-top: 8%;
+}
+h2{
+    margin-left: 35%;
+    font-size: 35px;
+}
+h3{
+    margin-left: 15%;
+    font-size: 35px;
+}
+.h23{
+   display: flex;
+}
+.lini{
+    background-color: #fde68a;
+    width:1px ;
+    height: 100%;
+    position: absolute; 
+    z-index: -1;
+    left: 50%;
+    top: 40%;
+}
+.phtml{
+    position: absolute;
+    left: 20%;
+    top: 40%;
+}
+summary{
+    font-size: 25px;
+}
